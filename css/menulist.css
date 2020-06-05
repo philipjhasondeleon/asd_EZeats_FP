@@ -385,6 +385,18 @@ body {
         width: auto;
         height: auto;
     }
+
+    article section h1 {
+      text-align: center;
+  }
+
+  article section img {
+    width: 250px;
+    height: 250px;
+}
+
+
+
   }
   
   /* Media Query for desktop view port */
@@ -557,6 +569,15 @@ body {
     form p {
       color: #000000;
     }
+
+    article section h1 {
+      text-align: center;
+  }
+
+  article section img {
+    width: 300px;
+    height: 250px;
+}
   
     /* body {
       background: -webkit-linear-gradient(left, white, #ffff99);
