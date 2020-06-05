@@ -67,6 +67,9 @@ body {
     display: none;
   }
   
+  figcaption{
+    background-color: darkorange;
+  }
   /* styles for the main div containg the page information */
   main {
     font-family: cursive;
