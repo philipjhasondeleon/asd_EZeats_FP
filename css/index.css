@@ -27,8 +27,8 @@ body {
   
   /* styles for the nav bar containing the links */
   nav {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1.25em;
+    font-family: cursive;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-top: -1.5em;
@@ -43,8 +43,8 @@ body {
   
   /* styles for the li in nav */
   nav li {
-    background-color: #9d9d93;
-    border-radius: 2em;
+    background-color: darkorange;
+    border-radius: none;
     margin: 0.3em;
     padding: 0.4em;
     list-style-type: none;
@@ -331,7 +331,7 @@ body {
     /* styles for pseudo-classes */
     /* when the link is not visited */
     nav li a:link {
-      color: #ffffff;
+      color: black;
     }
   
     /* when the link is visited */
@@ -348,7 +348,7 @@ body {
   
     /* when the links are active */
     nav li a:active {
-      color: #6600cc;
+      color: darkorange;
     }
   
     /* styles for the main */
