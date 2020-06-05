@@ -3,7 +3,7 @@
 /* styles for the body of the pages */
 body {
     background-color: #1d1d1c;
-    
+    font-family: cursive;
   }
   
   /* styles to have fluid images */
@@ -67,12 +67,9 @@ body {
     display: none;
   }
   
-  figcaption{
-    background-color: darkorange;
-  }
   /* styles for the main div containg the page information */
   main {
-    font-family: cursive;
+    font-family: Verdana, Arial, sans-serif;
     font-size: 1em;
     margin-top: 0.5em;
     padding: 1em;
@@ -240,7 +237,7 @@ body {
   
     /* styles for the article elememnt */
     article {
-      background-color: #c1d9ca;
+      background-color: black;
       float: left;
       margin: 0.5%;
       padding: 0.5%;
@@ -274,10 +271,10 @@ body {
   
     /* styles for the aside element */
     aside {
-      background-color: #ffffff;
+      background-color: darkorange;
       border-radius: 0 5em 5em 5em;
       padding: 1.5em;
-      box-shadow: 1em 1em 1em #4c4f4d;
+      box-shadow: 1em 1em 1em orange;
       margin: 1em;
     }
   
@@ -291,7 +288,7 @@ body {
   @media only screen and (min-width: 999px) {
     /* styles for container id */
     #container {
-      background-color: #1d1d1c;
+      background-color: black;
     }
   
     /* styles for header */
@@ -357,7 +354,7 @@ body {
   
     /* styles for the main */
     main {
-      background-color: #1d1d1c;
+      background-color: black;
     }
   
     /* styles for paragraphs inside main */
