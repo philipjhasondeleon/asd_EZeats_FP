@@ -72,9 +72,9 @@ body {
     font-size: 1em;
     margin-top: 0.5em;
     padding: 1em;
-    border-radius: 2em 0 2em 0;
+  
     opacity: 0.85;
-    background-color: #ffffff;
+    background-color: darkorange;
   }
   
   /* styles for the footer */
@@ -97,9 +97,9 @@ body {
   
   /* styles for anchor tags inside main element */
   main a {
-    background-color: #9d9d93;
+    background-color: black;
     border-radius: 1em;
-    color: #ffffff;
+    color: white;
     font-weight: bold;
     padding: 0.5em;
     text-decoration: none;
