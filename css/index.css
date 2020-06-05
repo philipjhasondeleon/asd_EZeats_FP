@@ -3,6 +3,7 @@
 /* styles for the body of the pages */
 body {
     background-color: #1d1d1c;
+    
   }
   
   /* styles to have fluid images */
@@ -68,7 +69,7 @@ body {
   
   /* styles for the main div containg the page information */
   main {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: cursive;
     font-size: 1em;
     margin-top: 0.5em;
     padding: 1em;
