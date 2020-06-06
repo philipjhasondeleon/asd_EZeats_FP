@@ -1,5 +1,8 @@
-
+body{
+  font-family: cursive;
+}
   /* styles for the tablet class */
+
   .tablet {
     display: none;
   }
@@ -157,7 +160,7 @@
     /* styles for the anchor element in the section element */
     section a {
       background-color: transparent;
-      color: #1d1d1c;
+      color: black;
       font-weight: normal;
       padding: 0;
       text-decoration: underline;
@@ -166,7 +169,7 @@
     /* styles for the contact class */
     .contact {
       background-color: transparent;
-      color: #1d1d1c;
+      color:black;
       text-decoration: underline;
       padding: 0;
     }

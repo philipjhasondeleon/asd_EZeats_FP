@@ -10,7 +10,11 @@ body {
   img {
     max-width: 100%;
   }
-  
+  .first{
+    background-color: black;
+    text-align: center;
+    color: red;
+  }
   /* Adopting the mobile-first strategy */
   /* styles for the Mobile Layout */
   
