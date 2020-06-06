@@ -165,6 +165,7 @@ body {
   #social img {
     padding: 0.5em;
   }
+
   
   /* Media query for TABLET viewport target - minimum width: 480px */
   
@@ -386,6 +387,7 @@ body {
         height: 360px;
         width: 800px;
     }
+
   }
   
   /* Media Query for desktop view port */
@@ -573,7 +575,6 @@ body {
     background-color: #1d1d1c;
  
 }
-  
     /* body {
       background: -webkit-linear-gradient(left, white, #ffff99);
       background: -webkit-linear-gradient(180deg, white, #ffff99);
