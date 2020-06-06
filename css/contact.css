@@ -1,92 +1,8 @@
-/* stylesheet for fitness club wesite created by .... */
-
-/* styles for the body of the pages */
-body {
-    background-color: #1d1d1c;
-  }
-  
-  /* styles to have fluid images */
-  img {
-    max-width: 100%;
-  }
-  
-  /* Adopting the mobile-first strategy */
-  /* styles for the Mobile Layout */
-  
-  /* styles for the id = container */
-  #container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* styles for the logo in the header div */
-  header {
-    text-align: center;
-  }
-  
-  /* styles for the nav bar containing the links */
-  nav {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1.25em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: -1.5em;
-  }
-  
-  /* styles specifies the padding and margins of the unordered list in nav */
-  nav ul {
-    padding: 0;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  /* styles for the li in nav */
-  nav li {
-    background-color: #9d9d93;
-    border-radius: 2em;
-    margin: 0.3em;
-    padding: 0.4em;
-    list-style-type: none;
-  }
-  
-  /* styles for the anchor tags that are in nav li */
-  nav li a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
-  /* styles for the mobile class */
-  .mobile {
-    display: inline;
-  }
-  
-  /* styles for the desktop class */
-  .desktop {
-    display: none;
-  }
-  
-  /* styles for the main div containg the page information */
-  main {
-    font-family: Verdana, Arial, sans-serif;
-    font-size: 1em;
-    margin-top: 0.5em;
-    padding: 1em;
-    border-radius: 2em 0 2em 0;
-    opacity: 0.85;
-    background-color: #ffffff;
-  }
-  
-  /* styles for the footer */
-  footer {
-    font-size: 0.7em;
-    text-align: center;
-    margin-top: 2em;
-    color: #ffffff;
-    overflow: auto;
-  }
-  
+body{
+  font-family: cursive;
+}
   /* styles for the tablet class */
+
   .tablet {
     display: none;
   }
@@ -96,21 +12,7 @@ body {
     display: none;
   }
   
-  /* styles for anchor tags inside main element */
-  main a {
-    background-color: #9d9d93;
-    border-radius: 1em;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 0.5em;
-    text-decoration: none;
-  }
   
-  /* styles for anchor tag inside footer */
-  footer a {
-    color: #ffffff;
-    text-decoration: none;
-  }
   
   /* styles for the aside element - nutrition page */
   aside {
@@ -147,12 +49,7 @@ body {
     display: none;
   }
   
-  /* styles rules for copyright id */
-  #copyright {
-    float: left;
-    margin-top: 2em;
-    width: 80%;
-  }
+  
   
   /* styles for the social id */
   #social {
@@ -182,13 +79,7 @@ body {
       background-color: transparent;
     }
   
-    /* styles for main */
-    main {
-      clear: left;
-      margin-top: 4em;
-      border-radius: 0;
-      overflow: auto;
-    }
+    
   
     /* styles for h1 element */
     h1 {
@@ -269,7 +160,7 @@ body {
     /* styles for the anchor element in the section element */
     section a {
       background-color: transparent;
-      color: #1d1d1c;
+      color: black;
       font-weight: normal;
       padding: 0;
       text-decoration: underline;
@@ -278,7 +169,7 @@ body {
     /* styles for the contact class */
     .contact {
       background-color: transparent;
-      color: #1d1d1c;
+      color:black;
       text-decoration: underline;
       padding: 0;
     }
@@ -423,35 +314,7 @@ body {
       width: 20%;
     }
   
-    /* styles for anchor tag inside nav li */
-    nav li a {
-      display: inline-block;
-      padding: 0.7em;
-      text-shadow: 0.2em 0.1em #3d3d35;
-    }
-  
-    /* styles for pseudo-classes */
-    /* when the link is not visited */
-    nav li a:link {
-      color: #ffffff;
-    }
-  
-    /* when the link is visited */
-    nav li a:visited {
-      color: #ccccff;
-    }
-  
-    /* pseudo class when hoverin over link */
-    nav li a:hover {
-      font-style: italic;
-      color: #9d9d93;
-    }
-  
-    /* when the links are active */
-    nav li a:active {
-      color: #6600cc;
-    }
-  
+    
     /* styles for the main */
     main {
       background-color: #1d1d1c;
@@ -509,13 +372,7 @@ body {
     }
   
     /* styles for footer */
-    footer {
-      background-color: #2a2a2a;
-      margin-top: -0.2em;
-      padding: 2em;
-      /* overflow: auto; */
-    }
-  
+    
     /* styles for the h2 element in the main - contact page */
     main h2 {
       color: #ffffff;
@@ -549,7 +406,8 @@ body {
   
     /* styles for the form element */
     form {
-      background-color: #ffffff;
+      font-family: cursive;
+      background-color: #ff980075;
       padding: 1em;
     }
   

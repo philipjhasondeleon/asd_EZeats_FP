@@ -10,7 +10,11 @@ body {
   img {
     max-width: 100%;
   }
-  
+  .first{
+    background-color: black;
+    text-align: center;
+    color: red;
+  }
   /* Adopting the mobile-first strategy */
   /* styles for the Mobile Layout */
   
@@ -180,6 +184,7 @@ body {
       display: block;
       float: left;
       margin-right: 1.5em;
+      width: 450px;
     }
   
     /* styles for unordered list (class items) */
@@ -360,10 +365,12 @@ body {
   
     /* styles for paragraphs inside main */
     main p {
-      color: #ffffff;
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
+      font-family: cursive;
+    color: darkorange;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: end;
     }
   
     /* styles specifies for item class */
@@ -411,9 +418,10 @@ body {
   
     /* styles for footer */
     footer {
-      background-color: #2a2a2a;
+      background-color:black;
       margin-top: -0.2em;
       padding: 2em;
+      color: white;
     }
   
     /* styles for the h2 element in the main - contact page */
@@ -434,6 +442,21 @@ body {
     /* styles for the paragraphs in article */
     article p {
       color: #000000;
+    }
+    .col1{
+      float: left;
+        width: 70%;
+        
+    }
+    .col2{
+      
+        float: left;
+        width: 30%;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
     }
     /* body {
       background: -webkit-linear-gradient(left, white, #ffff99);

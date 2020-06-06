@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EZeats</title>
+    <link rel="shortcut icon" type="images/png" href="images/ezeatlogonobg.png">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/login.css" />
 </head>
 <body>
-    <nav></nav>
-</body>
+    <div id="container">
+        <!-- this area is for the logo -->
+        <header>
+          <a href="index.html"
+            ><img
+              src="images/ezeatlogonobg.png" height="200px;"
+              alt="EZeats "
+              title="EZeats"
+          /></a>
+        </header>
+  
+        <!-- this area is for the hyperlinks to other pages -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <main>
+            <h2>Login Form</h2>
+                <form>
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" id="uname" placeholder="Enter Username" name="uname" required="required" >
+                    <label for="psw"><b>Password</b></label>
+                    <input id="password" type="password" placeholder="Enter Password" name="psw" required="required">   
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a href="mypage.html">Login</a>
+                    <button type="button" class="cancelbtn">Cancel</button>   
+                </div>
+            </form>
+          </main>
+        </div>
+        <script>
+            if (typeof Storage !== "undefined") {
+              localStorage.setItem("name", "anmariya");
+              alert(localStorage.getItem("name"));    
+              localStorage.setItem("name2", "philip");
+              localStorage.removeItem("name2");
+
+              var names = [];
+      
+              names[0] = prompt("New customer name?");
+              localStorage.setItem("names", JSON.stringify(names));
+      
+              var storedNames = JSON.parse(localStorage.getItem("names"));
+      
+              alert(storedNames[0]);
+            } else {
+              alert("Please update your current browser");
+            }
+          </script>
+    </body>
 </html>
