@@ -1,71 +1,5 @@
-/* stylesheet for fitness club wesite created by .... */
 
-/* styles for the body of the pages */
-body {
-    background-color: #1d1d1c;
-  }
-  
-  /* styles to have fluid images */
-  img {
-    max-width: 100%;
-  }
-  
-  /* Adopting the mobile-first strategy */
-  /* styles for the Mobile Layout */
-  
-  /* styles for the id = container */
-  #container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* styles for the logo in the header div */
-  header {
-    text-align: center;
-  }
-  
-  /* styles for the nav bar containing the links */
-  nav {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 1.25em;
-    font-weight: bold;
-    text-align: center;
-    margin-top: -1.5em;
-  }
-  
-  /* styles specifies the padding and margins of the unordered list in nav */
-  nav ul {
-    padding: 0;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  /* styles for the li in nav */
-  nav li {
-    background-color: #9d9d93;
-    border-radius: 2em;
-    margin: 0.3em;
-    padding: 0.4em;
-    list-style-type: none;
-  }
-  
-  /* styles for the anchor tags that are in nav li */
-  nav li a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-  
   /* styles for the mobile class */
-  .mobile {
-    display: inline;
-
-  }
-  
-  /* styles for the desktop class */
-  .desktop {
-    display: none;
-  }
   
   /* styles for the main div containg the page information */
   main {
@@ -401,58 +335,7 @@ body {
     }
   
     /* styles for nav */
-    nav {
-      float: right;
-      margin-top: -7em;
-      margin-right: 3em;
-      margin-bottom: 0;
-      width: 65%;
-    }
-  
-    /* styles for ul in nav for links */
-    nav ul {
-      margin: 0;
-      padding-left: 0.5%;
-      padding-right: 0.5%;
-    }
-  
-    /* styles for the list items in nav */
-    nav li {
-      margin-left: 0;
-      margin-right: 0;
-      padding: 0;
-      width: 20%;
-    }
-  
-    /* styles for anchor tag inside nav li */
-    nav li a {
-      display: inline-block;
-      padding: 0.7em;
-      text-shadow: 0.2em 0.1em #3d3d35;
-    }
-  
-    /* styles for pseudo-classes */
-    /* when the link is not visited */
-    nav li a:link {
-      color: #ffffff;
-    }
-  
-    /* when the link is visited */
-    nav li a:visited {
-      color: #ccccff;
-    }
-  
-    /* pseudo class when hoverin over link */
-    nav li a:hover {
-      font-style: italic;
-      color: #9d9d93;
-    }
-  
-    /* when the links are active */
-    nav li a:active {
-      color: #6600cc;
-    }
-  
+    
     /* styles for the main */
     main {
       background-color: #1d1d1c;
@@ -559,18 +442,14 @@ body {
       color: #000000;
     }
 
-    #container {
-      margin: 0 auto;
-      
-      width: 1000px;
-  }
+    
 
   body {
     font-size: 75%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     line-height: 1.5em;
     text-align: left;
-    background-color: #1d1d1c;
+    background-color:black;
  
 }
   
