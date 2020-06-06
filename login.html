@@ -4,8 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EZeats</title>
+    <link rel="shortcut icon" type="images/png" href="images/ezeatlogonobg.png">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/contact.css" />
 </head>
 <body>
-    <nav></nav>
+    <div id="container">
+        <!-- this area is for the logo -->
+        <header>
+          <a href="index.html"
+            ><img
+              src="images/ezeatlogonobg.png" height="200px;"
+              alt="EZeats "
+              title="EZeats"
+          /></a>
+        </header>
+  
+        <!-- this area is for the hyperlinks to other pages -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About US</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <main>
+        <form>
+            <!-- start form -->
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" name="fName" placeholder="enter your first name" required="required">
+  
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" name="lName" placeholder="enter your Last name" required="required"/>
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="enter valid emaiId" required="required"/>
+  
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="enter valid mobile number" required="required"/>
+            
+            <label for="gender">Gender:</label>
+            Male<input type="radio" id="male" name="option" value="Male"/>
+            Female<input type="radio" id="feamle" name="option" value="Feamle"/>
+        Other<input type="radio" id="other" name="option" value="Other"/>
+
+            <label for="birthDate">Birth Date</label>
+            <select name="birthDate" id="bDate">
+              <option value="1">Januvary</option>
+              <option value="2">Februvary</option>
+              <option value="3">March</option>
+              <option value="4">April</option>
+              <option value="5">May</option>
+              <option value="6">June</option>
+              <option value="7">July</option>
+              <option value="8">Augest</option>
+              <option value="9">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+  
+            <label for="questions">Questions?</label>
+            <textarea
+              name="questions"
+              id="questions"
+              cols="25"
+              rows="3"
+            ></textarea>
+            <!-- buttons -->
+            <input type="submit" id="submit" value="Submit" class="btn" />
+            <input type="reset" id="reset" value="Reset Form" class="btn" />
+          </form>
+          </main>
 </body>
 </html>
