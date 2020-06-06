@@ -19,6 +19,8 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+
+
   
   /* styles for the logo in the header div */
   header {
@@ -72,7 +74,7 @@ body {
     font-size: 1em;
     margin-top: 0.5em;
     padding: 1em;
-    border-radius: 2em 0 2em 0;
+    border-radius: 2em 2em 2em 2em;
     opacity: 0.85;
     background-color: #ffffff;
   }
@@ -163,6 +165,10 @@ body {
   /* styles for the images in social id */
   #social img {
     padding: 0.5em;
+  }
+
+  .box{
+    padding-top: 0.5em;
   }
   
   /* Media query for TABLET viewport target - minimum width: 480px */
@@ -385,6 +391,23 @@ body {
         width: auto;
         height: auto;
     }
+
+    article section h1 {
+      text-align: center;
+  }
+
+  article section img {
+    width: 250px;
+    height: 250px;
+}
+
+.box{
+  padding-top: 17em;
+  padding-left: 4.5em;
+}
+
+
+
   }
   
   /* Media Query for desktop view port */
@@ -557,6 +580,15 @@ body {
     form p {
       color: #000000;
     }
+
+    article section h1 {
+      text-align: center;
+  }
+
+  article section img {
+    width: 300px;
+    height: 250px;
+}
   
     /* body {
       background: -webkit-linear-gradient(left, white, #ffff99);

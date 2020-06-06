@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EZeats</title>
+    <link rel="shortcut icon" type="images/png" href="images/ezeatlogonobg.png">
     <link rel="stylesheet" href="css/menulist.css" />
   </head>
   <body>
@@ -24,8 +25,10 @@
             <li><a href="contactus.html">Contact Us</a></li>
           </ul>
         </nav>
-      <!-- main content of the website -->
-      <main>
+    
+    <!-- main content of the website -->
+    <main class="flex-container">
+      <article>
         <section>
 
           <h1 class="title-equip">Oven Baked PorkChop</h1>
@@ -34,17 +37,13 @@
             src="images/ovenbakedporkchop.jpg"
             alt="Oven Baked PorkChop"
           />
+          <div class="box">
+            <input type="number">
+          </div>
         </section>
+      </article>
 
-        <section>
-          <h1 class="title-equip">Spicy Korean BBQ Style Pork</h1>
-          <img
-            class="equip"
-            src="images/spicykoreanbbqstylepork.jpg"
-            alt="Spicy Korean BBQ Style Pork"
-          />
-        </section>
-
+      <article>
         <section>
           <h1 class="title-equip">Sweet And Sour Pork</h1>
           <img
@@ -52,17 +51,38 @@
             src="images/sweetandsourpork.jpg"
             alt="Sweet And Sour Pork"
           /></a>
+          <div class="box">
+            <input type="number">
+          </div>
         </section>
-      </main>
+        
+      </article>
 
-      <!-- footer of the webpage -->
-      <footer>
-        <div id="copyright">
-          <p>
-            &copy; Copyright 2020. All Rights reserved. 
-          </p>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+      <article>
+        <section>
+          <h1 class="title-equip">Spicy Korean BBQ Style Pork</h1>
+          <img
+            class="equip"
+            src="images/spicykoreanbbqstylepork.jpg"
+            alt="Spicy Korean BBQ Style Pork"
+          />
+          <div class="box">
+            <input type="number">
+          </div>
+        </section>
+   
+      </article>
+    </main>
+
+    <!-- footer of the webpage -->
+    <footer>
+      <div id="copyright">
+        <p>
+          &copy; Copyright 2020. All Rights reserved. 
+        </p>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
