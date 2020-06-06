@@ -74,7 +74,7 @@ body {
     font-size: 1em;
     margin-top: 0.5em;
     padding: 1em;
-    border-radius: 2em 0 2em 0;
+    border-radius: 2em 2em 2em 2em;
     opacity: 0.85;
     background-color: #ffffff;
   }
@@ -165,6 +165,10 @@ body {
   /* styles for the images in social id */
   #social img {
     padding: 0.5em;
+  }
+
+  .box{
+    padding-top: 0.5em;
   }
   
   /* Media query for TABLET viewport target - minimum width: 480px */
@@ -395,6 +399,11 @@ body {
   article section img {
     width: 250px;
     height: 250px;
+}
+
+.box{
+  padding-top: 17em;
+  padding-left: 4.5em;
 }
 
 
