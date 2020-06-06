@@ -320,14 +320,8 @@
         height: 360px;
         width: 800px;
     }
-  }
   
-  /* Media Query for desktop view port */
-  @media only screen and (min-width: 999px) {
-    /* styles for container id */
-    #container {
-      background-color: #1d1d1c;
-    }
+  
   
     /* styles for header */
     header {
@@ -338,12 +332,12 @@
     
     /* styles for the main */
     main {
-      background-color: #1d1d1c;
+      background-color: black;
     }
   
     /* styles for paragraphs inside main */
     main p {
-      color: #ffffff;
+      color: darkorange;
       margin-left: auto;
       margin-right: auto;
       width: 90%;
@@ -392,13 +386,7 @@
       color: #ffffff;
     }
   
-    /* styles for footer */
-    footer {
-      background-color: #2a2a2a;
-      margin-top: -0.2em;
-      padding: 2em;
-      /* overflow: auto; */
-    }
+    
   
     /* styles for the h2 element in the main - contact page */
     main h2 {
