@@ -99,6 +99,7 @@
   #social img {
     padding: 0.5em;
   }
+
   
   /* Media query for TABLET viewport target - minimum width: 480px */
   
@@ -440,7 +441,6 @@
     background-color:black;
  
 }
-  
     /* body {
       background: -webkit-linear-gradient(left, white, #ffff99);
       background: -webkit-linear-gradient(180deg, white, #ffff99);
