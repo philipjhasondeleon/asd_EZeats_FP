@@ -29,9 +29,10 @@
         <form class="new-note" style="margin-bottom: 0.2em;">
           <div>
             <h2>Login Form</h2>
-            <label for="note">username</label>
+            <label for="note">fullname</label>
             <input id="note" type="text" required />
-              
+            <label for="note1">password</label>
+            <input id="note1" type="text" required />
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <a href="mypage.html">Login</a>
             <button type="button" class="cancelbtn">Cancel</button> 
             
@@ -41,14 +42,25 @@
         <section class="notes">
           <ul style="list-style-type: none;"><p></p>
           <li style="border-bottom: 0.05em solid white;"></li></ul>
-          
+        </section>
+        <section class="note1">
+          <ul style="list-style-type: none;"><p></p>
+          <li style="border-bottom: 0.05em solid white;"></li></ul>
+        </section>
+        <section class="note2">
+          <ul style="list-style-type: none;"><p></p>
+          <li style="border-bottom: 0.05em solid white;"></li></ul>
+        </section>
+        <section class="note3">
+          <ul style="list-style-type: none;"><p></p>
+          <li style="border-bottom: 0.05em solid white;"></li></ul>
         </section>
           </main>
         </div>
-        <script>
+        <script src="js/login.js">
             if (typeof Storage !== "undefined") {
-              localStorage.setItem("name", "welcome to your page");
-              alert(localStorage.getItem("name"));    
+              localStorage.setItem("fullname", "welcome to your page");
+              alert(localStorage.getItem("fullname"));    
               localStorage.setItem("name2", "anmariya");
               localStorage.removeItem("name2");
 

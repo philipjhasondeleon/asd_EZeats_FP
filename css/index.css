@@ -295,6 +295,7 @@ body {
     /* styles for container id */
     #container {
       background-color: black;
+      color:white;
     }
   
     /* styles for header */

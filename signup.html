@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>EZeats</title>
+   
+    </head>
+    
+    <body>
+      <form>
+        <label>Name</label>
+  <div class="input-field">
+      <input type="text" required id="name">
+     
+    </div>
+    <div class="input-field">
+        <label>Mobile</label>
+      <input type="number" required id="mobile">
+      
+    </div>
+    <div class="input-field">
+        <label>Email or Username</label>
+      <input type="text" required id="userName">
+      
+    </div>
+  <div class="input-field">
+    <label>Password</label>
+      <input class="pswrd" type="password" required id="password"> 
+      
+      
+    </div>
+   
+  <div class="button">
+      <div class="inner">
+  </div>
+  <button id="loginBtn"  onclick="registerUser()">SignUp</button>
+    </div>
+  </form>
+  <script src="js/signup.js" type="text/javascript">
+  var input = document.querySelector('.pswrd');
+  var show = document.querySelector('.show');
+  show.addEventListener('click', active);
+  function active(){
+    if(input.type === "password"){
+      input.type = "text";
+      show.style.color = "#1DA1F2";
+      show.textContent = "HIDE";
+    }else{
+      input.type = "password";
+      show.textContent = "SHOW";
+      show.style.color = "#111";
+    }
+  }
+  </script> 
+</div>
+</body>
+</html>

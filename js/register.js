@@ -2,13 +2,15 @@
 let db;
 
 const note = document.querySelector("#note");
+const name = document.querySelector("#name");
+const email = document.querySelector("#email");
 const form = document.querySelector("form");
 const list = document.querySelector("ul");
 
 // when the window is opened the following scripts are running
 window.onload = () => {
-  // create and open an indexed db with name [notes] and version 1
-  let request = window.indexedDB.open("notes", 1);
+  // create and open an indexed db with name [register] and version 1
+  let request = window.indexedDB.open("register", 1);
 
   request.onerror = function () {
     console.log("Database failed to open");
@@ -25,13 +27,15 @@ window.onload = () => {
   request.onupgradeneeded = function (e) {
     let db = e.target.result;
     // object store is like table in db
-    let objectStore = db.createObjectStore("notes", {
+    let objectStore = db.createObjectStore("register", {
       keyPath: "id",
       autoIncrement: true,
     });
 
     // create index in object store [like columns]
-    objectStore.createIndex("note", "note", { unique: false });
+    objectStore.createIndex("name", "name", { unique: false });
+    objectStore.createIndex("email", "email", { unique: false });
+    
 
     console.log("Database setup complete");
   };
@@ -44,15 +48,30 @@ window.onload = () => {
     // prevent browser to refresh
     e.preventDefault();
 
-    let newItem = { note: note.value };
+    let fName = { name: name.value };
+    let fEmail={email:email.value};
+    
+   
+
 
     // create a transaction to write to db
-    let transaction = db.transaction(["notes"], "readwrite");
-    let objectStore = transaction.objectStore("notes");
-    let request = objectStore.add(newItem);
+    let transaction = db.transaction(["register"], "readwrite");
+    let objectStore = transaction.objectStore("register");
+    var Group =
+    {
+      name:fName,
+      Email:fEmail
+    }
+    let request = objectStore.add(Group);
+   
+    request.onsuccess = function (e) {
+      console.log("User Added");
+  }
+    
 
     request.onsuccess = () => {
-      note.value = "";
+      name.value = "";
+      email.value=""
     };
 
     transaction.oncomplete = () => {
@@ -63,70 +82,5 @@ window.onload = () => {
     transaction.onerror = () => {
       console.log("Transaction not completed, error!!!");
     };
-  }
-
-  // read data from db
-  function displayData() {
-    // removing items from list to avoid repetition
-    while (list.firstChild) {
-      list.removeChild(list.firstChild);
-    }
-
-    // read data from database to populate the list
-    // create a transaction to read data from db
-    let objectStore = db.transaction("notes").objectStore("notes");
-    objectStore.openCursor().onsuccess = function (e) {
-      let cursor = e.target.result;
-      // we need cursor to read data
-      if (cursor) {
-        let listItem = document.createElement("li");
-        let note = document.createElement("p");
-
-        listItem.appendChild(note);
-        list.appendChild(listItem);
-
-        note.textContent = cursor.value.note;
-
-        listItem.setAttribute("data-note-id", cursor.value.id);
-
-        // add delete button for each list item
-        let deleteButton = document.createElement("button");
-        listItem.appendChild(deleteButton);
-        deleteButton.textContent = "Delete";
-
-        deleteButton.onclick = deleteItem;
-
-        cursor.continue();
-      } else {
-        if (!list.firstChild) {
-          let listItem = document.createElement("li");
-          listItem.textContent = "No favourites";
-          list.appendChild(listItem);
-        }
-      }
-      console.log("notes displayed!!!");
-    };
-  }
-
-  // delete data from db
-  function deleteItem(e) {
-    let noteId = Number(e.target.parentNode.getAttribute("data-note-id"));
-
-    // create a transaction to write to db
-    let transaction = db.transaction(["notes"], "readwrite");
-    let objectStore = transaction.objectStore("notes");
-    let request = objectStore.delete(noteId);
-
-    transaction.oncomplete = () => {
-      e.target.parentNode.parentNode.removeChild(e.target.parentNode);
-
-      console.log(`Note ${noteId} is deleted!`);
-
-      if (!list.firstChild) {
-        let listItem = document.createElement("li");
-        listItem.textContent = "No favourites";
-        list.appendChild(listItem);
-      }
-    };
-  }
+  }  
 };
