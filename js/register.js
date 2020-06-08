@@ -81,4 +81,5 @@ window.onload = () => {
     };
   }  
   alert("Registration successfull");
+  window.open=""
 };
