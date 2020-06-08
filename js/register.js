@@ -40,20 +40,17 @@ window.onload = () => {
     console.log("Database setup complete");
   };
 
-  // addData is called when the form is submitted
-  form.onsubmit = addData;
+  // addPerson is called when the form is submitted
+  form.onsubmit = addPerson;
 
   // add data into db
-  function addData(e) {
+  function addPerson(e) {
     // prevent browser to refresh
     e.preventDefault();
 
     let fName = { name: name.value };
     let fEmail={email:email.value};
     
-   
-
-
     // create a transaction to write to db
     let transaction = db.transaction(["register"], "readwrite");
     let objectStore = transaction.objectStore("register");
@@ -63,7 +60,7 @@ window.onload = () => {
       Email:fEmail
     }
     let request = objectStore.add(Group);
-   
+    
     request.onsuccess = function (e) {
       console.log("User Added");
   }
@@ -76,6 +73,7 @@ window.onload = () => {
 
     transaction.oncomplete = () => {
       console.log("Transaction completed on the database");
+      alert("Registration successfull");
       displayData();
     };
 
@@ -83,4 +81,6 @@ window.onload = () => {
       console.log("Transaction not completed, error!!!");
     };
   }  
+  
+  window.open=""
 };
