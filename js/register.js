@@ -73,6 +73,7 @@ window.onload = () => {
 
     transaction.oncomplete = () => {
       console.log("Transaction completed on the database");
+      alert("Registration successfull");
       displayData();
     };
 
@@ -80,6 +81,6 @@ window.onload = () => {
       console.log("Transaction not completed, error!!!");
     };
   }  
-  alert("Registration successfull");
+  
   window.open=""
 };
