@@ -74,7 +74,7 @@ window.onload = () => {
     transaction.oncomplete = () => {
       console.log("Transaction completed on the database");
       alert("Registration successfull");
-      displayData();
+      window.open("mypage.html","_blank");
     };
 
     transaction.onerror = () => {
@@ -82,5 +82,4 @@ window.onload = () => {
     };
   }  
   
-  window.open=""
 };
